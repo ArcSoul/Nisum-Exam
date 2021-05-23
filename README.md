@@ -10,6 +10,10 @@
 #### Métricas:
 `http://localhost:8081/actuator`
 
+`http://localhost:8081/actuator/metrics/users.login.user`
+
+NOTA: Las métricas de users.login.user solo se activan si has consumido el servicio aunque sea una vez por instancia de jvm
+
 #### Swagger - Documentación de API Rest
 `http://localhost:8081/swagger-ui.html`
 
