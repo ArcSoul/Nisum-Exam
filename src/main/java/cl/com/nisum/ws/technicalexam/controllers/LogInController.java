@@ -1,6 +1,5 @@
 package cl.com.nisum.ws.technicalexam.controllers;
 
-import cl.com.nisum.ws.technicalexam.models.entities.UserEntity;
 import cl.com.nisum.ws.technicalexam.models.requests.LoginRequest;
 import cl.com.nisum.ws.technicalexam.models.responses.ErrorResponse;
 import cl.com.nisum.ws.technicalexam.models.responses.LoginResponse;
@@ -13,7 +12,6 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -80,7 +78,6 @@ public class LogInController {
     public ResponseEntity<LoginResponse> logInUser(@RequestBody @Valid LoginRequest request) {
         return new ResponseEntity<>(logInService.logInUser(request), HttpStatus.CREATED);
     }
-
 
 
 }

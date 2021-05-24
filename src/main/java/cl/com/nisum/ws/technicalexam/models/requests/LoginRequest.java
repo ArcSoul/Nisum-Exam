@@ -31,7 +31,7 @@ public class LoginRequest {
 
     @NotBlank(message = "La contraseña no puede estar vacía")
     @Size(min= 4, max= 20, message = "La contraseña debe tener entre 4 a 20 caracteres")
-    @Pattern(regexp = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d{2,})", message = "La contraseña no tiene el formato correcto")
+    @Pattern(regexp = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d{2,})\\S{4,}$", message = "La contraseña no tiene el formato correcto")
     @Schema(description = "Contraseña del usuario", example = "latestAA153_", required = true)
     private String password;
 
