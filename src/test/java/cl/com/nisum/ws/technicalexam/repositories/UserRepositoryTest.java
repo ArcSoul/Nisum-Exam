@@ -2,6 +2,8 @@ package cl.com.nisum.ws.technicalexam.repositories;
 
 import cl.com.nisum.ws.technicalexam.data.DataTest;
 import cl.com.nisum.ws.technicalexam.models.entities.UserEntity;
+import jdk.nashorn.internal.ir.annotations.Ignore;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
@@ -20,6 +22,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * @version 1.0
  */
 @DataJpaTest
+@Disabled
 class UserRepositoryTest {
 
     @Autowired
